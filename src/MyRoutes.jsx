@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Profile from './Profile'
 import Hi from './pages/Hi'
+import Toggle from './components/Toggle'
 const MyRoutes = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const MyRoutes = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/profile/:username' element={<Profile />} />
           <Route path='/hello' element={<Hi />} />
+          <Route path='/toggle' element={<Toggle />} />
         </Route>
 
       </Routes>

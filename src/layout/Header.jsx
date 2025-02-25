@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Toggle from '../components/Toggle'
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
 
         </div>
 
-          <div className='text-3xl py-2 flex justify-evenly'>
+          <div className='text-3xl py-2 flex justify-evenly items-center'>
 
             <Link to={'/login'}>
               <i className='bi bi-box-arrow-in-left'></i>
@@ -27,6 +28,11 @@ const Header = () => {
             <Link to={'/login'}>
               <i className='bi bi-cart'></i>
             </Link>
+     
+       <div>
+              <Toggle />
+       </div>
+
           </div>
       </div>
     </>
