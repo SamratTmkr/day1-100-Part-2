@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -14,6 +15,11 @@ const Login = () => {
   <input type="password" className="input w-full" placeholder="Password" />
   
   <button className="btn btn-neutral mt-4">Login</button>
+
+  <div className="flex justify-between text-lg">
+  </div>
+    <span>Do not have an account?<Link to='/register'>Sign Up</Link></span>
+    <Link to={'/forgetpassword'}>Forget Password</Link>
 </fieldset>
 </div>
 </>
