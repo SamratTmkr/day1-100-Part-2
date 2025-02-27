@@ -15,25 +15,28 @@ const Header = () => {
 
         </div>
 
-          <div className='text-3xl py-2 flex justify-evenly items-center'>
+        <div className='text-3xl py-2 flex justify-evenly items-center'>
 
-            <Link to={'/login'}>
-              <i className='bi bi-box-arrow-in-left'></i>
-            </Link>
+          <Link to={'/login'}>
+            <i className='bi bi-box-arrow-in-left'></i>
+          </Link>
 
-            <Link to={'/register'}>
-              <i className='bi bi-person-plus'></i>
-            </Link>
+          <Link to={'/register'}>
+            <i className='bi bi-person-plus'></i>
+          </Link>
 
-            <Link to={'/login'}>
-              <i className='bi bi-cart'></i>
-            </Link>
-     
-       <div>
-              <Toggle />
-       </div>
+          <Link to={'/login'}>
+            <i className='bi bi-cart'></i>
+          </Link>
 
+          <div className="dropdown dropdown-end dropdown-hover">
+            <i tabIndex={0} role="button" className=" m-1 bi bi-box-arrow-in-down w-7 "> </i>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow">
+            <li className='mx-auto'><Toggle/></li>
+            <li className=''> <Link to='/aboutus' className='btn btn-md'> About Us </Link></li>
+            </ul>
           </div>
+        </div>
       </div>
     </>
   )

@@ -16,6 +16,7 @@ const Toggle = () => {
     } else {
       document.body.style.backgroundColor = "#fff";
       document.body.style.color = "#000";
+
     }
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
@@ -42,7 +43,7 @@ const Toggle = () => {
 
         {/* Moon Icon (Dark Mode) */}
         <svg
-          className="swap-on h-8 w-8 fill-current"
+          className="swap-on h-8 w-8 fill-current text-black"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

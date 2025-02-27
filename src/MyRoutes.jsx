@@ -8,6 +8,7 @@ import Profile from './Profile'
 import Hi from './pages/Hi'
 import Toggle from './components/Toggle'
 import Register from './pages/Register'
+import Aboutus from './pages/Aboutus'
 const MyRoutes = () => {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ const MyRoutes = () => {
           <Route path='/hello' element={<Hi />} />
           <Route path='/toggle' element={<Toggle />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/aboutus' element={<Aboutus />} />
         </Route>
 
       </Routes>
