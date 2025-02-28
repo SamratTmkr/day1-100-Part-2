@@ -9,8 +9,13 @@ import Hi from './pages/Hi'
 import Toggle from './components/Toggle'
 import Register from './pages/Register'
 import Aboutus from './pages/Aboutus'
+import { LoginProvider } from './context/LoginContext'
 const MyRoutes = () => {
   return (
+
+<LoginProvider>
+  
+
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
@@ -25,6 +30,7 @@ const MyRoutes = () => {
 
       </Routes>
     </BrowserRouter>
+</LoginProvider>
   )
 }
 
