@@ -10,6 +10,7 @@ import Toggle from './components/Toggle'
 import Register from './pages/Register'
 import Aboutus from './pages/Aboutus'
 import { LoginProvider } from './context/LoginContext'
+import TodoList from './components/TodoList'
 const MyRoutes = () => {
   return (
 
@@ -27,6 +28,7 @@ const MyRoutes = () => {
           <Route path='/register' element={<Register />} />
           <Route path='/aboutus' element={<Aboutus />} />
         </Route>
+          <Route path='/todo' element={<TodoList />} />
 
       </Routes>
     </BrowserRouter>
